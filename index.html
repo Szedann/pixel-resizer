@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel image resizer</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="beans">
+        <h1>pixel image resizer</h1>
+        <div class="inputs">
+          <div>
+            <input type="file" id="file" accept="image/*" multiple>
+          </div>
+          <div style="display: flex;">
+            <input type="number" id="scale" placeholder="scale" min="1" style="width: 100%;">
+            <input type="button" id="run" value="resize">
+          </div>
+          <a id="download">download</a>
+        </div>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
